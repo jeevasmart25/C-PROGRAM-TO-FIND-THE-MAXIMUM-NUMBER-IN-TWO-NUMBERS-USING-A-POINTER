@@ -1,1 +1,14 @@
-# C-PROGRAM-TO-FIND-THE-MAXIMUM-NUMBER-IN-TWO-NUMBERS-USING-A-POINTER
+#include<stdio.h>
+int main()
+{
+	int a,b,big;
+	int *p,*q;
+	scanf("%d%d", &a,&b);
+	p=&a;
+	q=&b;
+	if(*p>*q)
+	big=*p;
+	else
+	big=*q;
+	printf("bBIG=%d",big);
+}
